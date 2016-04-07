@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+         {% block title %}Mouse Hotel{% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    {% block header %}{% endblock %}
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div id="top-content">
+            <h1>My Mice App</h1>
+            <ul>
+                <li>
+                    <a href="{% url 'home' %}">Home</a>
+                </li>
+                <li>
+                    <a href="{% url 'about' %}">About</a>
+                </li>
+                <li>
+                    <a href="{% url 'contact' %}">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </header>
+    {% block content %}{% endblock %}
+    {% block footer %}{% endblock %}
+</body>
+</html>

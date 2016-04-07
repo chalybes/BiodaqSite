@@ -1,0 +1,56 @@
+#header {
+    background: rgba(22, 12, 38, 0.77);
+    color: #EBEDED;
+    min-width: 970px;
+    margin: 0 auto;
+    padding: 2px;
+}
+
+#top-content {
+    margin: 5px;
+    color: #EBEDED;
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+}
+
+#top-content a {
+    color: #EBEDED;
+}
+
+#container {
+    border: 2px #444;
+    height: 200px;
+
+    display: inline-block;
+
+    /* just for demo */
+    min-width: 300px;
+
+    margin: 4px;
+    text-align: center;
+
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+a:link, a:hover, a:active, a:visited {
+  font-weight: normal;
+  text-decoration: none;
+  color: #333333;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    background-color: #EBEDED;
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+}
+
+
+

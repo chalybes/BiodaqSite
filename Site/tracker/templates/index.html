@@ -1,0 +1,25 @@
+{% extends 'layouts/base.html' %}
+{% load staticfiles %}
+{% block title %}Homepage - {{ block.super }}{% endblock %}
+{% block content %}
+    {% for thing in things %}
+        <div id="container">
+        <h2><a href="{% url 'specifics' slug=thing.slug %}">
+            {{ thing.PSC }}
+            <br>
+            {{thing.endDate}}
+            <br>
+        {% if thing.name %}
+            <img src="{% static 'img/BioDaqwMouse.png' %}" />
+        {% else %}
+            <img src="{% static 'img/BioDaqwoMouse.png' %}" />
+        {% endif %}
+        </a></h2>
+        </div>
+    {% endfor %}
+{% endblock %}
+
+
+
+
+

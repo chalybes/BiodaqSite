@@ -1,0 +1,12 @@
+{% extends 'layouts/base.html' %}
+{% block title %}{{ details.name }} - {{ block.super }}{% endblock %}
+{% block content %}
+    <br>
+    <p>Reserver: {{ details.name }}</p>
+    <p>Mouse line: {{ details.mouse}}</p>
+    <p>Reserve Start Date: {{ details.startDate }}</p>
+    <p>Reserve End Date: {{ details.endDate }}</p>
+<form action="{% url 'edit_entry' slug=details.slug %}">
+<button>Edit me!</button>
+</form>
+{% endblock %}
